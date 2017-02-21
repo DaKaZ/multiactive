@@ -1,0 +1,5 @@
+<Alloy>
+  <Window class="container" layout="vertical" onClick="doClose">
+      <Label top="50">This is the modal window, touch anywhere to close</Label>
+  </Window>
+</Alloy>

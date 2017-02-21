@@ -1,0 +1,16 @@
+.project
+build.log
+build
+npm-debug.log
+test_servers
+tmp
+.map
+Resources
+.idea
+.irb-history
+screenshot_*.png
+.DS_Store
+.settings
+build
+Resources
+/platform
