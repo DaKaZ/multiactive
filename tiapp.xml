@@ -54,7 +54,7 @@
 						<action android:name="android.intent.action.VIEW"/>
 						<category android:name="android.intent.category.DEFAULT"/>
 						<category android:name="android.intent.category.BROWSABLE"/>
-						<data android:scheme="multiactive" android:host="blocked"/>
+						<data android:scheme="multiactive" />
 					</intent-filter>
 				</activity>
 				<activity android:name="org.appcelerator.titanium.TiActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
@@ -71,7 +71,7 @@
 			<activity url="SecondActivity.js" android:exported="true">
 				<intent-filter>
 					<action android:name="android.intent.action.VIEW"/>
-					<category android:name="android.intent.category.DEFAULT"/>
+					<category android:name="android.intent.category.EMBED"/>
 				</intent-filter>
 			</activity>
 		</activities>
@@ -92,7 +92,7 @@
 		<target device="mobileweb">false</target>
 		<target device="windows">false</target>
 	</deployment-targets>
-	<sdk-version>5.5.1.GA</sdk-version>
+	<sdk-version>6.0.2.v20170215162535</sdk-version>
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
 	</plugins>

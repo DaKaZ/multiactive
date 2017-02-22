@@ -11,6 +11,9 @@ we need to perform the correct action, but we don't get the data, its like the
 intent in `Ti.Android.currentActivity.getIntent()`` does not fetch the most recent
 intent.
 
+Following this bug: https://jira.appcelerator.org/browse/TIMOB-20459 I have added
+an event listener and installed the latest 6.0.2 RC, but this event is not firing either.
+
 Desired result, kill the app the completely, issue the command:
 ```
 adb shell am start -W -a android.intent.action.VIEW -d "multiactive://blocked/testing" com.kaztopia.multiactive
