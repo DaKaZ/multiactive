@@ -58,7 +58,7 @@
 						<action android:name="android.intent.action.VIEW"/>
 						<category android:name="android.intent.category.DEFAULT"/>
 						<category android:name="android.intent.category.BROWSABLE"/>
-						<data android:scheme="multiactive" android:host="block"/>
+						<data android:scheme="multiactive" android:host="blocked"/>
 					</intent-filter>
 				</activity>
 				<activity android:name="org.appcelerator.titanium.TiActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
