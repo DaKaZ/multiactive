@@ -1,9 +1,33 @@
 = Multiactive =
 
 This is a simple project meant to demonstrate the problem with multiple
-activities and Alloy.
+activities and/or intents with Titanium and Alloy.
 
-== Desired Result==
+== Second Intent Problem ==
+
+Scenario: your app is running either in the foreground or background.  Another app
+or android service calls your app with an intent.  The new intent has data in it
+we need to perform the correct action, but we don't get the data, its like the
+intent in `Ti.Android.currentActivity.getIntent()`` does not fetch the most recent
+intent.
+
+Desired result, kill the app the completely, issue the command:
+```
+adb shell am start -W -a android.intent.action.VIEW -d "multiactive://blocked/testing" com.kaztopia.multiactive
+```
+
+You should get an alert that says "multiactive://blocked/testing"
+
+Kill the app.  Restart the app from the standard android launcher, then run the command:
+```
+adb shell am start -W -a android.intent.action.VIEW -d "multiactive://blocked/testing" com.kaztopia.multiactive
+```
+
+You will get an alert showing the data is null.
+
+== Multi-activity Problem ==
+
+=== Desired Result ===
 
 Start app on device, from computer enter:
 ```
