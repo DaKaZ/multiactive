@@ -1,5 +1,5 @@
 ".container":{
-  width: Ti.UI.FILL,
-  height: Ti.UI.FILL,
+  width: Alloy.Globals.width, // just to test Alloy
+  height: Alloy.Globals.width,
   backgroundColor: "lightgray"
 }

@@ -9,3 +9,6 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+Alloy.Globals.width = Ti.UI.FILL;
+Alloy.Globals.intent = Ti.Android.currentActivity.getIntent();

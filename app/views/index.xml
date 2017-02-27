@@ -1,5 +1,6 @@
 <Alloy>
 	<Window class="container">
 		<Label id="label" onClick="doClick">Open Model</Label>
+		<Label id="label" onClick="doView" top="50">Open View</Label>
 	</Window>
 </Alloy>
